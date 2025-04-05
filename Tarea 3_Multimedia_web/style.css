@@ -77,21 +77,11 @@ img:hover { /* Zoom al pasar el ratón */
     transform: scale(1.05); 
 }
 
-@media (max-width: 768px) { /* Ajuste de adaptabilidad para pantallas de telefono */
-    .container {
-        flex-direction: column;
-    }
-
-    img {
-        width: 80%; 
-    }
-}
-
-.glitch {
+.glitch {  /* Animación del título*/
     position: relative;
     font-size: 3rem;
     font-weight: bold;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     text-transform: uppercase;
     overflow: hidden;
@@ -109,15 +99,9 @@ img:hover { /* Zoom al pasar el ratón */
     clip: rect(0, 900px, 0, 0);
 }
 
-.glitch::before {
-    left: 2px;
-    text-shadow: -2px 0 red;
-    animation: glitch-animation 0.5s infinite linear alternate-reverse;
-}
-
 .glitch::after {
     left: -2px;
-    text-shadow: -2px 0 blue;
+    text-shadow: -2px 0 rgb(0, 255, 0);
     animation: glitch-animation 0.5s infinite linear alternate-reverse;
 }
 
